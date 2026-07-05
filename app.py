@@ -268,4 +268,4 @@ with gr.Blocks(theme=gr.themes.Base()) as demo:
     <footer style="text-align:center; color:#33fff6; font-size:0.9rem; margin-top:2rem;">This is an AI-powered tool for learning. Not a substitute for real medical consultation.</footer>
     """)
 
-demo.launch(debug=True)
+demo.launch(server_name="0.0.0.0", server_port=int(os.environ.get("PORT", 7860)), debug=True)
